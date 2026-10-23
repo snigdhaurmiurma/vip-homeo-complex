@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ভিআইপি হোমিও কমপ্লেক্স | VIP Homeo Complex - ডা. এম. এস. ইসলাম</title>
-  <meta name="description" content="ভিআইপি হোমিও কমপ্লেক্স - জটিল ও পুরাতন রোগের স্থায়ী পার্শ্বপ্রতিক্রিয়াহীন হোমিওপ্যাথি চিকিৎসা। চিকিৎসায়: ডা. এম. এস. ইসলাম [D.H.M.S (B.H.B.), Dhaka]। সরাসরি কল: 01762-222128">
+  <meta name="description" content="ভিআইপি হোমিও কমপ্লেক্স - ৩০ বছরের অভিজ্ঞ চিকিৎসক ডা. এম. এস. ইসলাম [D.H.M.S, গভঃ রেজি: ২২২১৭]। ইমো ও হোয়াটসঅ্যাপে অনলাইনে সেবা নেওয়া যায়। সরাসরি কল: 01762-222128">
 
   <link rel="icon" type="image/svg+xml" href="assets/logo.svg">
 
@@ -72,7 +72,11 @@
       }
     }
     .doctor-glow {
-      box-shadow: 0 20px 40px -15px rgba(5, 150, 105, 0.35);
+      box-shadow: 0 20px 40px -15px rgba(5, 150, 105, 0.4);
+    }
+    .visiting-card-mesh {
+      background: linear-gradient(135deg, #064e3b 0%, #022c22 45%, #0f172a 100%);
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.45), 0 0 0 1px rgba(245, 158, 11, 0.25);
     }
   </style>
 </head>
@@ -87,7 +91,7 @@
         </span>
         <span class="hidden sm:inline-block text-slate-600">|</span>
         <span class="inline-flex items-center gap-1.5 text-amber-300 font-medium">
-          <i class="fa-solid fa-video"></i> ইমো (IMO) ও হোয়াটসঅ্যাপে অনলাইন পরামর্শ
+          <i class="fa-solid fa-laptop-medical"></i> ইমো (IMO) ও হোয়াটসঅ্যাপে অনলাইনে সেবা নেওয়া যায়
         </span>
       </div>
       <div class="flex items-center gap-3">
@@ -116,9 +120,10 @@
           <a href="#home" class="hover:text-brand-600 transition">হোম</a>
           <a href="#doctor" class="hover:text-brand-600 transition">ডাক্তার পরিচিতি</a>
           <a href="#chamber" class="hover:text-brand-600 transition">চেম্বার দর্শন</a>
+          <a href="#video" class="hover:text-brand-600 transition">ভিডিও বার্তা</a>
           <a href="#services" class="hover:text-brand-600 transition">চিকিৎসার ক্ষেত্রসমূহ</a>
           <a href="#medicines" class="hover:text-brand-600 transition">ওষুধের ধরণ</a>
-          <a href="#online-consult" class="hover:text-brand-600 transition">অনলাইন ও কুরিয়ার সেবা</a>
+          <a href="#visiting-card" class="hover:text-brand-600 transition">ভিজিটিং কার্ড</a>
           <a href="#contact" class="hover:text-brand-600 transition">যোগাযোগ</a>
         </nav>
 
@@ -145,11 +150,12 @@
     <div id="mobileMenu" class="hidden lg:hidden bg-white border-b border-slate-200 px-4 pt-2 pb-6 space-y-3">
       <a href="#home" class="block py-2 text-slate-700 hover:text-brand-600 font-medium">হোম</a>
       <a href="#doctor" class="block py-2 text-slate-700 hover:text-brand-600 font-medium">ডাক্তার পরিচিতি</a>
-      <a href="#chamber" class="block py-2 text-slate-700 hover:text-brand-600 font-medium">চেম্বার গ্যালারি</a>
+      <a href="#chamber" class="block py-2 text-slate-700 hover:text-brand-600 font-medium">চেম্বার দর্শন</a>
+      <a href="#video" class="block py-2 text-slate-700 hover:text-brand-600 font-medium">ভিডিও বার্তা</a>
       <a href="#services" class="block py-2 text-slate-700 hover:text-brand-600 font-medium">চিকিৎসার ক্ষেত্রসমূহ</a>
       <a href="#medicines" class="block py-2 text-slate-700 hover:text-brand-600 font-medium">ওষুধের ধরণ</a>
-      <a href="#online-consult" class="block py-2 text-slate-700 hover:text-brand-600 font-medium">ইমো / হোয়াটসঅ্যাপ ও কুরিয়ার সেবা</a>
-      <a href="#contact" class="block py-2 text-slate-700 hover:text-brand-600 font-medium">যোগাযোগ ও চেম্বার</a>
+      <a href="#visiting-card" class="block py-2 text-slate-700 hover:text-brand-600 font-medium">ডিজিটাল ভিজিটিং কার্ড</a>
+      <a href="#contact" class="block py-2 text-slate-700 hover:text-brand-600 font-medium">যোগাযোগ ও সিরিয়াল</a>
       <div class="pt-2 flex flex-col gap-2">
         <button onclick="openAppointmentModal()" class="w-full py-2.5 text-center text-sm font-bold text-white bg-emerald-600 hover:bg-emerald-700 rounded-lg">
           <i class="fa-regular fa-calendar-check mr-1"></i> অনলাইন সিরিয়াল নিন
@@ -163,7 +169,6 @@
 
   <!-- HERO SECTION -->
   <section id="home" class="relative overflow-hidden bg-gradient-to-br from-slate-900 via-emerald-950 to-slate-900 text-white py-14 lg:py-20">
-    <!-- Subtle Ambient Glows -->
     <div class="absolute top-0 left-1/4 w-96 h-96 bg-emerald-500/10 rounded-full blur-3xl pointer-events-none"></div>
     <div class="absolute bottom-0 right-10 w-96 h-96 bg-teal-500/15 rounded-full blur-3xl pointer-events-none"></div>
 
@@ -173,10 +178,9 @@
         <!-- Left Column: Headline & Call To Actions -->
         <div class="lg:col-span-7 space-y-5 text-center lg:text-left">
           
-          <!-- Trust Pill -->
           <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-500/20 border border-emerald-500/30 text-emerald-300 text-xs sm:text-sm font-medium">
             <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
-            <span>১০০% আসল বিদেশি হোমিওপ্যাথি ওষুধ ও সুচিকিৎসা</span>
+            <span>৩০ বছরের সুদীর্ঘ অভিজ্ঞতা সম্পন্ন বিশেষজ্ঞ চিকিৎসক</span>
           </div>
 
           <!-- Main Heading -->
@@ -190,17 +194,17 @@
 
           <!-- Subtitle / Doctor Banner Reference -->
           <p class="text-slate-300 text-base sm:text-lg font-normal leading-relaxed max-w-2xl mx-auto lg:mx-0">
-            অভিজ্ঞ হোমিও চিকিৎসক <strong class="text-white font-bold">ডা. এম. এস. ইসলাম</strong>-এর প্রত্যক্ষ তত্ত্বাবধানে প্রতিটি রোগীর লক্ষণভিত্তিক সঠিক রোগ নির্ণয় ও সর্বোচ্চ গুণগত মানের জার্মান ওষুধের মাধ্যমে সফল আরোগ্য।
+            ৩০ বছরের অভিজ্ঞ হোমিওপ্যাথিক চিকিৎসক <strong class="text-white font-bold">ডা. এম. এস. ইসলাম</strong>-এর সরাসরি পরিচালনায় প্রতিটি রোগীর শারীরিক ও মানসিক লক্ষণভিত্তিক নিখুঁত রোগ নির্ণয় ও আসল জার্মান ওষুধের মাধ্যমে স্থায়ী আরোগ্য।
           </p>
 
-          <!-- Online Video Consultation Highlight Badge -->
+          <!-- Online Video Consultation Highlight Badge (Refined as requested) -->
           <div class="p-3.5 rounded-xl bg-gradient-to-r from-emerald-900/70 to-teal-900/70 border border-emerald-500/40 text-left flex items-center gap-3">
             <div class="w-10 h-10 rounded-lg bg-emerald-600/80 flex items-center justify-center text-white text-lg shrink-0">
-              <i class="fa-solid fa-headset"></i>
+              <i class="fa-solid fa-laptop-medical"></i>
             </div>
             <div class="text-xs sm:text-sm">
-              <span class="font-bold text-amber-300 block">ইমো (IMO) ও হোয়াটসঅ্যাপে (WhatsApp) অনলাইন কনসালটেশন</span>
-              <span class="text-slate-200">দেশের যেকোনো প্রান্ত ও প্রবাসীরা ঘরে বসেই ভিডিও কলে চিকিৎসা নিয়ে কুরিয়ারে ওষুধ নিতে পারেন।</span>
+              <span class="font-bold text-amber-300 block">অনলাইনে সেবা গ্রহণের বিশেষ সুবিধা</span>
+              <span class="text-slate-200">ইমো (IMO) ও হোয়াটসঅ্যাপে (WhatsApp) দেশ ও প্রবাস থেকে অনলাইনে সরাসরি ডাক্তারের পরামর্শ ও সেবা নেওয়া যায়।</span>
             </div>
           </div>
 
@@ -222,61 +226,56 @@
             </button>
           </div>
 
-          <!-- Schedule note -->
           <p class="text-xs text-slate-300 flex items-center justify-center lg:justify-start gap-2 pt-1">
             <i class="fa-solid fa-circle-info text-emerald-400"></i>
             রোগী দেখার সময়: প্রতিদিন সকাল ১০:০০ - দুপুর ২:০০ এবং বিকাল ৪:০০ - রাত ৯:০০
           </p>
         </div>
 
-        <!-- Right Column: Professional Doctor Portrait Card -->
+        <!-- Right Column: Requested Doctor Portrait Card -->
         <div class="lg:col-span-5 flex justify-center">
           <div class="w-full max-w-sm bg-gradient-to-b from-slate-800 to-slate-900 rounded-3xl p-5 border border-emerald-500/40 shadow-2xl relative text-center">
             
-            <!-- Top VIP Ribbon -->
             <div class="flex items-center justify-between pb-3 mb-3 border-b border-slate-700/70">
               <span class="text-[11px] uppercase tracking-wider font-bold text-emerald-400 flex items-center gap-1">
                 <i class="fa-solid fa-circle-check"></i> রেজিস্টার্ড হোমিওপ্যাথিক ফিজিশিয়ান
               </span>
               <span class="bg-amber-400/20 text-amber-300 text-[10px] font-bold px-2 py-0.5 rounded">
-                VIP HOMEO
+                ৩০ বছরের অভিজ্ঞতা
               </span>
             </div>
 
-            <!-- Doctor Photo (Professional Crop) -->
-            <div class="relative mx-auto w-52 h-56 rounded-2xl overflow-hidden shadow-xl border-2 border-emerald-400/60 bg-slate-950 mb-4 doctor-glow">
-              <img src="assets/doctor-portrait.jpg" alt="ডা. এম. এস. ইসলাম - Dr. M.S. Islam" class="w-full h-full object-cover object-top hover:scale-105 transition duration-500">
-              <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-slate-950 via-slate-950/60 to-transparent p-2">
-                <span class="text-[11px] font-bold text-emerald-300">Dr. M. S. Islam</span>
-              </div>
+            <!-- New Doctor Portrait as requested -->
+            <div class="relative mx-auto w-56 h-56 rounded-full overflow-hidden shadow-2xl border-4 border-emerald-400/80 bg-slate-950 mb-4 doctor-glow">
+              <img src="assets/doctor-portrait.jpg" alt="ডা. এম. এস. ইসলাম - Dr. M.S. Islam" class="w-full h-full object-cover object-center hover:scale-105 transition duration-500">
             </div>
 
-            <!-- Doctor Identity Details -->
+            <!-- Doctor Exact Credentials From 3rd Uploaded Picture -->
             <div class="space-y-1">
               <h3 class="text-2xl font-extrabold text-white">ডা. এম. এস. ইসলাম</h3>
-              <p class="text-sm font-bold text-teal-300">D.H.M.S (B.H.B.), Dhaka</p>
-              <p class="text-xs text-slate-300">বাংলাদেশ হোমিওপ্যাথি বোর্ড, ঢাকা</p>
+              <p class="text-xs sm:text-sm font-bold text-teal-300">ডি.এইচ.এম.এস. (বি.এইচ.বি), ঢাকা।</p>
+              <div class="inline-flex items-center gap-2 bg-slate-950/70 px-3 py-1 rounded-full border border-slate-700 text-xs mt-1">
+                <span class="text-slate-300 font-semibold">গভঃ রেজি: <strong class="text-amber-300">২২২১৭</strong></span>
+                <span class="text-slate-500">|</span>
+                <span class="text-slate-300 font-semibold">গভঃ রেজি: <strong class="text-amber-300">২২৭১</strong></span>
+              </div>
+              <p class="text-[11px] text-slate-400 mt-1">বি.ইউ.এ.বি কিউ.সি.বি, ঢাকা</p>
             </div>
 
-            <!-- Contact Box with Clean Non-mixed English Number -->
-            <div class="mt-4 bg-slate-950/80 p-3.5 rounded-xl border border-slate-800 text-left space-y-2">
-              <div class="flex items-center justify-between text-xs">
-                <span class="text-slate-400">সরাসরি কল ও সিরিয়াল:</span>
+            <!-- Contact Box -->
+            <div class="mt-4 bg-slate-950/80 p-3 rounded-xl border border-slate-800 text-left space-y-1.5 text-xs">
+              <div class="flex items-center justify-between">
+                <span class="text-slate-400">সরাসরি কল:</span>
                 <a href="tel:01762222128" class="font-extrabold text-amber-300 text-sm hover:underline">01762-222128</a>
               </div>
-              <div class="flex items-center justify-between text-xs">
+              <div class="flex items-center justify-between">
                 <span class="text-slate-400">হোয়াটসঅ্যাপ / ইমো:</span>
                 <a href="https://wa.me/8801762222128" target="_blank" class="font-bold text-emerald-400 hover:underline">+880 1762-222128</a>
               </div>
-              <div class="flex items-center justify-between text-xs">
-                <span class="text-slate-400">অনলাইন কনসালটেন্সি:</span>
-                <span class="text-xs font-semibold text-slate-200">ইমো ও হোয়াটসঅ্যাপ সক্রিয়</span>
-              </div>
             </div>
 
-            <!-- CTA button inside card -->
-            <a href="tel:01762222128" class="mt-4 block w-full py-2.5 bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white font-bold rounded-xl shadow transition text-sm">
-              <i class="fa-solid fa-phone mr-1.5"></i> ডাক্তারের সাথে সরাসরি কথা বলুন
+            <a href="tel:01762222128" class="mt-3 block w-full py-2.5 bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white font-bold rounded-xl shadow transition text-xs">
+              <i class="fa-solid fa-phone mr-1"></i> সরাসরি পরামর্শের জন্য কল দিন
             </a>
 
           </div>
@@ -286,14 +285,14 @@
     </div>
   </section>
 
-  <!-- QUICK RUNNING ANNOUNCEMENT -->
+  <!-- REFINED RUNNING ANNOUNCEMENT (No courier over-explanation, focused on online service availability) -->
   <div class="bg-emerald-600 text-white py-2 overflow-hidden text-xs sm:text-sm">
     <div class="max-w-7xl mx-auto px-4 flex items-center gap-3">
       <span class="bg-emerald-800 text-amber-300 font-bold px-2.5 py-0.5 rounded shrink-0">
         <i class="fa-solid fa-bullhorn mr-1"></i> অনলাইন সেবা
       </span>
       <p class="font-medium truncate">
-        দূর-দূরান্ত ও প্রবাসীদের জন্য ইমো (IMO) ও হোয়াটসঅ্যাপে (WhatsApp) ভিডিও কলে রোগী দেখে কুরিয়ার সার্ভিসে জার্মানির সিলপ্যাক ওষুধ পাঠানো হয়। সিরিয়াল: 01762-222128
+        ইমো (IMO) ও হোয়াটসঅ্যাপে (WhatsApp) দেশ ও প্রবাস থেকে অনলাইনে সরাসরি ডাক্তারের পরামর্শ ও সেবা নেওয়া যায়। হটলাইন: 01762-222128
       </p>
     </div>
   </div>
@@ -303,64 +302,77 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
         <div class="p-3 rounded-xl bg-slate-50 border border-slate-100">
-          <div class="text-2xl sm:text-3xl font-extrabold text-emerald-700">১৫+</div>
-          <div class="text-xs font-semibold text-slate-600 mt-0.5">বছরের অভিজ্ঞ চিকিৎসক</div>
+          <div class="text-2xl sm:text-3xl font-extrabold text-emerald-700">৩০ বছর</div>
+          <div class="text-xs font-semibold text-slate-600 mt-0.5">অভিজ্ঞতা সম্পন্ন চিকিৎসক</div>
         </div>
         <div class="p-3 rounded-xl bg-slate-50 border border-slate-100">
-          <div class="text-2xl sm:text-3xl font-extrabold text-emerald-700">১০,০০০+</div>
-          <div class="text-xs font-semibold text-slate-600 mt-0.5">সুস্থ ও আরোগ্যপ্রাপ্ত রোগী</div>
+          <div class="text-2xl sm:text-3xl font-extrabold text-emerald-700">২২২১৭ / ২২৭১</div>
+          <div class="text-xs font-semibold text-slate-600 mt-0.5">বাংলাদেশ গভঃ রেজিস্ট্রেশন</div>
         </div>
         <div class="p-3 rounded-xl bg-slate-50 border border-slate-100">
           <div class="text-2xl sm:text-3xl font-extrabold text-emerald-700">১০০%</div>
           <div class="text-xs font-semibold text-slate-600 mt-0.5">আসল জার্মান ওষুধ</div>
         </div>
         <div class="p-3 rounded-xl bg-slate-50 border border-slate-100">
-          <div class="text-2xl sm:text-3xl font-extrabold text-emerald-700">৬৪ জেলায়</div>
-          <div class="text-xs font-semibold text-slate-600 mt-0.5">কুরিয়ার ডেলিভারি ও অনলাইন সেবা</div>
+          <div class="text-2xl sm:text-3xl font-extrabold text-emerald-700">দেশ ও প্রবাসে</div>
+          <div class="text-xs font-semibold text-slate-600 mt-0.5">অনলাইনে সেবা প্রদান</div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- DOCTOR DETAILED ABOUT SECTION -->
-  <section id="doctor" class="py-16 lg:py-20 bg-slate-50">
+  <section id="doctor" class="py-16 bg-slate-50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
-      <div class="text-center max-w-3xl mx-auto mb-14">
-        <span class="text-emerald-700 bg-emerald-100 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">ডাক্তার পরিচিতি ও যোগ্যতা</span>
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <span class="text-emerald-700 bg-emerald-100 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">ডাক্তার পরিচিতি ও পূর্ণাঙ্গ তথ্য</span>
         <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 mt-3">
           ডা. এম. এস. ইসলাম (Dr. M. S. Islam)
         </h2>
         <div class="w-16 h-1 bg-emerald-600 mx-auto mt-3 rounded-full"></div>
         <p class="text-slate-600 text-sm sm:text-base mt-3">
-          ডি.এইচ.এম.এস (বি.এইচ.বি.), ঢাকা — রেজিস্টার্ড হোমিওপ্যাথিক ফিজিশিয়ান। ভিআইপি হোমিও কমপ্লেক্সের প্রতিষ্ঠাতা ও প্রধান কনসালট্যান্ট।
+          ৩০ বছরের দীর্ঘ সফল চিকিৎসা অভিজ্ঞতাসম্পন্ন রেজিস্টার্ড হোমিওপ্যাথিক ফিজিশিয়ান।
         </p>
       </div>
 
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
         
-        <!-- Left: Doctor Standing Portrait & Visiting Card Badge -->
+        <!-- Left: Portrait and Doctor Official Info -->
         <div class="lg:col-span-5 space-y-4">
-          <div class="bg-white p-5 rounded-2xl shadow-lg border border-slate-200 text-center">
+          <div class="bg-white p-6 rounded-2xl shadow-lg border border-slate-200 text-center">
             
-            <div class="relative w-full h-80 rounded-xl overflow-hidden bg-slate-900 mb-4 shadow">
-              <img src="assets/doctor-portrait.jpg" alt="Dr. M.S. Islam" class="w-full h-full object-cover object-top">
-              <div class="absolute bottom-2 left-2 right-2 bg-slate-900/85 backdrop-blur-sm p-2 rounded-lg text-white text-xs">
-                <span class="font-bold text-emerald-400">Dr. M. S. Islam</span> &bull; D.H.M.S(B.H.B.), Dhaka
+            <div class="w-48 h-48 mx-auto rounded-2xl overflow-hidden shadow-md border-2 border-emerald-500/60 mb-4">
+              <img src="assets/doctor-portrait.jpg" alt="Dr. M. S. Islam" class="w-full h-full object-cover">
+            </div>
+
+            <h3 class="text-xl font-bold text-slate-900">ডা. এম. এস. ইসলাম</h3>
+            <p class="text-xs font-bold text-emerald-700 mt-0.5">৩০ বছরের অভিজ্ঞতা সম্পন্ন</p>
+
+            <div class="mt-4 p-4 rounded-xl bg-slate-50 border border-slate-200 text-left space-y-2 text-xs">
+              <div>
+                <strong class="text-slate-800 block">ডিগ্রি:</strong>
+                <span class="text-slate-600">ডি.এইচ. এম. এস. (বি.এইচ.বি), ঢাকা।</span>
+              </div>
+              <div>
+                <strong class="text-slate-800 block">গভঃ রেজি:</strong>
+                <span class="text-emerald-700 font-bold">২২২১৭</span>
+              </div>
+              <div>
+                <strong class="text-slate-800 block">অনুমোদন ও কাউন্সিল:</strong>
+                <span class="text-slate-600">বি.ইউ.এ.বি কিউ.সি.বি , ঢাকা।</span>
+              </div>
+              <div>
+                <strong class="text-slate-800 block">গভঃ রেজি:</strong>
+                <span class="text-emerald-700 font-bold">২২৭১</span>
               </div>
             </div>
 
-            <!-- Official Visiting Card Badge -->
-            <div class="p-3 bg-slate-950 rounded-xl border border-slate-800 text-center">
-              <p class="text-[11px] text-slate-400 mb-2">অফিসিয়াল যোগাযোগ ও ভিজিটিং ব্যাজ:</p>
-              <img src="assets/doctor-badge.png" alt="Official Contact Badge" class="mx-auto rounded-lg max-h-32 object-contain border border-cyan-500/40 shadow">
-            </div>
-
-            <div class="mt-3 flex items-center justify-center gap-3">
-              <a href="tel:01762222128" class="flex-1 py-2 bg-emerald-600 hover:bg-emerald-700 text-white font-bold rounded-lg text-xs transition">
+            <div class="mt-4 flex gap-2">
+              <a href="tel:01762222128" class="flex-1 py-2.5 bg-emerald-600 hover:bg-emerald-700 text-white font-bold rounded-lg text-xs transition">
                 <i class="fa-solid fa-phone mr-1"></i> কল: 01762-222128
               </a>
-              <a href="https://wa.me/8801762222128" target="_blank" class="flex-1 py-2 bg-slate-900 hover:bg-slate-800 text-white font-bold rounded-lg text-xs transition">
+              <a href="https://wa.me/8801762222128" target="_blank" class="flex-1 py-2.5 bg-slate-900 hover:bg-slate-800 text-white font-bold rounded-lg text-xs transition">
                 <i class="fa-brands fa-whatsapp text-emerald-400 mr-1"></i> WhatsApp
               </a>
             </div>
@@ -368,75 +380,40 @@
           </div>
         </div>
 
-        <!-- Right Content & Qualifications -->
-        <div class="lg:col-span-7 space-y-5">
+        <!-- Right: Professional Credentials & Philosophy -->
+        <div class="lg:col-span-7 space-y-4">
           <div class="bg-white p-6 sm:p-8 rounded-2xl shadow-sm border border-slate-200 space-y-4">
             
-            <div class="border-b border-slate-100 pb-4">
+            <div class="border-b border-slate-100 pb-3">
               <span class="text-xs font-bold text-emerald-600 uppercase">চিকিৎসা দর্শন ও মূলনীতি</span>
-              <h3 class="text-2xl font-bold text-slate-900 mt-1">রোগীর সামগ্রিক সুস্থতায় ক্লাসিক্যাল হোমিওপ্যাথি</h3>
+              <h3 class="text-2xl font-bold text-slate-900 mt-1">লক্ষণভিত্তিক গভীর রোগ নির্ণয় ও স্থায়ী আরোগ্য</h3>
             </div>
 
-            <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
-              ডা. এম. এস. ইসলাম দীর্ঘদিন ধরে নিষ্ঠার সাথে জটিল, দীর্ঘদিনের পুরাতন ও অপারেশনবিহীন রোগের সফল চিকিৎসা প্রদান করে আসছেন। রোগীর মূল লক্ষণসমূহ গভীর মনোযোগের সাথে শুনে কেস হিস্ট্রি তৈরি করে সঠিক জার্মানি শক্তিকৃত ওষুধ নির্বাচন করাই তাঁর প্রধান বিশেষত্ব।
+            <p class="text-slate-600 text-sm leading-relaxed">
+              হোমিওপ্যাথি চিকিৎসা শাস্ত্রে সুদীর্ঘ ৩০ বছরের নিরবচ্ছিন্ন অভিজ্ঞতায় ডা. এম. এস. ইসলাম জটিল, দীর্ঘদিনের পুরাতন ও অপারেশনবিহীন রোগের চিকিৎসায় এক অনন্য আস্থা অর্জন করেছেন। প্রতিটি রোগীর অতীত রোগের ইতিবৃত্ত, মানসিক অবস্থা ও শারীরিক লক্ষণ বিবেচনা করে সঠিক একক জার্মানি ওষুধ প্রয়োগ করাই তাঁর চিকিৎসার মূল ভিত্তি।
             </p>
 
             <!-- Chamber Schedule Box -->
-            <div class="bg-emerald-50 border border-emerald-200 rounded-xl p-4 space-y-2">
-              <h4 class="font-bold text-slate-900 text-sm flex items-center gap-2">
+            <div class="bg-emerald-50 border border-emerald-200 rounded-xl p-4 space-y-1.5 text-xs sm:text-sm">
+              <h4 class="font-bold text-slate-900 flex items-center gap-2">
                 <i class="fa-solid fa-calendar-days text-emerald-700"></i> চেম্বারের সময়সূচী ও রোগী দেখার সময়
               </h4>
-              <p class="text-xs sm:text-sm text-slate-700">
+              <p class="text-slate-700">
                 <strong>প্রতিদিন:</strong> সকাল ১০:০০ টা থেকে দুপুর ২:০০ টা এবং বিকাল ৪:০০ টা থেকে রাত ৯:০০ টা পর্যন্ত।
               </p>
-              <p class="text-xs text-emerald-800 font-semibold">
+              <p class="text-emerald-800 font-semibold">
                 <i class="fa-solid fa-check-circle text-emerald-600"></i> চেম্বারে সরাসরি আসার আগে সিরিয়াল নিশ্চিত করার জন্য কল করুন: <span class="font-bold text-emerald-950">01762-222128</span>
               </p>
             </div>
 
-            <!-- Online Consultation through WhatsApp / IMO -->
-            <div class="bg-amber-50 border border-amber-200 rounded-xl p-4 space-y-2">
-              <h4 class="font-bold text-slate-900 text-sm flex items-center gap-2">
-                <i class="fa-solid fa-video text-amber-600"></i> ইমো (IMO) ও হোয়াটসঅ্যাপে (WhatsApp) অনলাইন কনসালটেন্সি
+            <!-- Online Consultation Highlights -->
+            <div class="bg-amber-50 border border-amber-200 rounded-xl p-4 space-y-1.5 text-xs sm:text-sm">
+              <h4 class="font-bold text-slate-900 flex items-center gap-2">
+                <i class="fa-solid fa-laptop-medical text-amber-600"></i> দেশ ও প্রবাস থেকে অনলাইন কনসালটেন্সি
               </h4>
-              <p class="text-xs text-slate-700 leading-relaxed">
-                ঢাকার বাইরে বা প্রবাসে থাকা যে সকল রোগী সরাসরি চেম্বারে আসতে পারেন না, তাঁরা <strong>+880 1762-222128</strong> নম্বরে ইমো বা হোয়াটসঅ্যাপে ভিডিও কলে ডাক্তারের সাথে কথা বলে ব্যবস্থাপত্র ও কুরিয়ারে ওষুধ নিতে পারেন।
+              <p class="text-slate-700 leading-relaxed">
+                যে সকল রোগী দূর-দূরান্তে বা প্রবাসে অবস্থান করছেন, তাঁরা <strong>+880 1762-222128</strong> নম্বরে ইমো (IMO) বা হোয়াটসঅ্যাপে (WhatsApp) ভিডিও কলে সরাসরি ডা. এম. এস. ইসলামের সাথে কথা বলে চিকিৎসা ও পরামর্শ নিতে পারেন।
               </p>
-            </div>
-
-            <!-- 4 Core Pillars -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
-              <div class="flex items-start gap-2.5 p-3 rounded-lg bg-slate-50 border border-slate-200/80">
-                <i class="fa-solid fa-circle-check text-emerald-600 mt-0.5"></i>
-                <div class="text-xs">
-                  <strong class="text-slate-800 block font-bold">নিখুঁত কেস টেকিং:</strong>
-                  <span class="text-slate-600">রোগীর গভীর লক্ষণ পর্যবেক্ষণ করে চিকিৎসা।</span>
-                </div>
-              </div>
-
-              <div class="flex items-start gap-2.5 p-3 rounded-lg bg-slate-50 border border-slate-200/80">
-                <i class="fa-solid fa-circle-check text-emerald-600 mt-0.5"></i>
-                <div class="text-xs">
-                  <strong class="text-slate-800 block font-bold">বিনা অপারেশনে আরোগ্য:</strong>
-                  <span class="text-slate-600">পাইলস, ফিস্টুলা, টনসিল ও কিডনি পাথরে নিরাপদ ফল।</span>
-                </div>
-              </div>
-
-              <div class="flex items-start gap-2.5 p-3 rounded-lg bg-slate-50 border border-slate-200/80">
-                <i class="fa-solid fa-circle-check text-emerald-600 mt-0.5"></i>
-                <div class="text-xs">
-                  <strong class="text-slate-800 block font-bold">জার্মান সিলপ্যাক মেডিসিন:</strong>
-                  <span class="text-slate-600">Dr. Reckeweg ও Schwabe জার্মানি আমদানি করা ওষুধ।</span>
-                </div>
-              </div>
-
-              <div class="flex items-start gap-2.5 p-3 rounded-lg bg-slate-50 border border-slate-200/80">
-                <i class="fa-solid fa-circle-check text-emerald-600 mt-0.5"></i>
-                <div class="text-xs">
-                  <strong class="text-slate-800 block font-bold">গোপনীয়তা ও সম্মান:</strong>
-                  <span class="text-slate-600">নারী ও পুরুষদের গোপন স্বাস্থ্য সমস্যার বিশ্বস্ত সমাধান।</span>
-                </div>
-              </div>
             </div>
 
           </div>
@@ -447,66 +424,66 @@
     </div>
   </section>
 
-  <!-- CHAMBER CONSULTATION DESK SHOWCASE (NEW REAL PHOTO SECTION) -->
+  <!-- CHAMBER CONSULTATION DESK (PHARMACY WORD REMOVED / TOP CUT AS REQUESTED) -->
   <section id="chamber" class="py-16 bg-white border-y border-slate-200">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
-      <div class="text-center max-w-3xl mx-auto mb-12">
+      <div class="text-center max-w-3xl mx-auto mb-10">
         <span class="text-emerald-700 bg-emerald-100 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">আমাদের চেম্বার</span>
         <h2 class="text-3xl font-bold text-slate-900 mt-2">
           চেম্বারে রোগী দেখার মুহূর্তে ডা. এম. এস. ইসলাম
         </h2>
         <div class="w-16 h-1 bg-emerald-600 mx-auto mt-3 rounded-full"></div>
         <p class="text-slate-600 text-sm mt-3">
-          ভি.আই.পি হোমিও ফার্মেসী ও কমপ্লেক্স-এর নিজস্ব কনসালটেশন ডেস্ক ও ওষুধের শেলফ।
+          ভিআইপি হোমিও কমপ্লেক্সের নিজস্ব কনসালটেশন ডেস্ক ও ওষুধের সুসজ্জিত ফার্মাকোপিয়া।
         </p>
       </div>
 
       <div class="bg-gradient-to-br from-slate-900 to-emerald-950 rounded-3xl p-6 sm:p-10 shadow-2xl overflow-hidden text-white">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
           
-          <!-- Chamber Photo -->
+          <!-- Chamber Photo: top banner cut as requested -->
           <div class="lg:col-span-7">
-            <div class="rounded-2xl overflow-hidden border-2 border-emerald-500/50 shadow-2xl relative group">
-              <img src="assets/doctor-chamber.png" alt="ভি.আই.পি হোমিও ফার্মেসী - চেম্বারে ডা. এম. এস. ইসলাম" class="w-full h-auto object-cover group-hover:scale-102 transition duration-500">
-              <div class="absolute bottom-0 inset-x-0 bg-slate-950/80 backdrop-blur-sm p-3 text-center text-xs text-emerald-300 font-semibold border-t border-slate-700">
-                ভি.আই.পি হোমিও কমপ্লেক্স &bull; চিকিৎসায়: ডা. এম. এস. ইসলাম
+            <div class="rounded-2xl overflow-hidden border-2 border-emerald-500/50 shadow-2xl relative group bg-slate-950">
+              <img src="assets/doctor-chamber.png" alt="ভিআইপি হোমিও কমপ্লেক্স - চেম্বারে ডা. এম. এস. ইসলাম" class="w-full h-auto object-cover group-hover:scale-102 transition duration-500">
+              <div class="absolute bottom-0 inset-x-0 bg-slate-950/85 backdrop-blur-sm p-3 text-center text-xs text-emerald-300 font-semibold border-t border-slate-700">
+                VIP HOMEO COMPLEX &bull; চিকিৎসায়: ডা. এম. এস. ইসলাম
               </div>
             </div>
           </div>
 
-          <!-- Chamber Details & Highlights -->
+          <!-- Chamber Info -->
           <div class="lg:col-span-5 space-y-4">
             <span class="text-amber-400 text-xs font-bold uppercase tracking-wider">
-              <i class="fa-solid fa-stethoscope mr-1"></i> বিশ্বস্ত চিকিৎসা পরিবেশ
+              <i class="fa-solid fa-stethoscope mr-1"></i> আন্তরিক চিকিৎসা পরিবেশ
             </span>
             <h3 class="text-2xl sm:text-3xl font-bold text-white leading-tight">
-              রোগীর সরাসরি সাক্ষাৎ ও আন্তরিক চিকিৎসাসেবা
+              ভিআইপি হোমিও কমপ্লেক্স
             </h3>
             <p class="text-slate-300 text-sm leading-relaxed">
-              চেম্বারে রয়েছে সমৃদ্ধ হোমিও ফার্মেসী, যেখানে সংরক্ষণ করা হয় জার্মানি ও সুইজারল্যান্ডের প্রস্তুতকৃত শত শত অরিজিনাল মাদার টিংচার ও বায়োকেমিক মেডিসিন।
+              চেম্বারে সংরক্ষিত রয়েছে জার্মানি ও সুইজারল্যান্ডের প্রস্তুতকৃত শত শত অরিজিনাল মাদার টিংচার ও বায়োকেমিক মেডিসিন।
             </p>
 
-            <div class="space-y-3 pt-2 text-xs sm:text-sm text-slate-200">
-              <div class="flex items-center gap-3">
+            <div class="space-y-2.5 text-xs sm:text-sm text-slate-200">
+              <div class="flex items-center gap-2.5">
                 <i class="fa-solid fa-circle-check text-emerald-400"></i>
-                <span>প্রতিটি রোগীর জন্য পর্যাপ্ত সময় ও আন্তরিক পরামর্শ</span>
+                <span>প্রতিটি রোগীর জন্য পূর্ণ মনোযোগ ও আন্তরিক সময়</span>
               </div>
-              <div class="flex items-center gap-3">
+              <div class="flex items-center gap-2.5">
                 <i class="fa-solid fa-circle-check text-emerald-400"></i>
-                <span>প্রয়োজনীয় প্রেসক্রিপশন ও ওষুধের নিয়ম বুঝিয়ে দেওয়া</span>
+                <span>রোগের মূল কারণ দূরীকরণে অর্গানন সম্মত পদ্ধতি</span>
               </div>
-              <div class="flex items-center gap-3">
+              <div class="flex items-center gap-2.5">
                 <i class="fa-solid fa-circle-check text-emerald-400"></i>
-                <span>দূরবর্তী রোগীদের জন্য প্রেসক্রিপশন ছবি তুলে পাঠানো</span>
+                <span>অনলাইনে ইমো ও হোয়াটসঅ্যাপে সরাসরি ভিডিও কল সেবা</span>
               </div>
             </div>
 
-            <div class="pt-4 flex flex-wrap gap-3">
-              <a href="tel:01762222128" class="px-5 py-3 bg-emerald-500 hover:bg-emerald-600 text-white font-bold rounded-xl text-xs transition inline-flex items-center gap-2">
-                <i class="fa-solid fa-phone"></i> চেম্বারের সিরিয়াল নিন: 01762-222128
+            <div class="pt-2 flex flex-wrap gap-3">
+              <a href="tel:01762222128" class="px-5 py-2.5 bg-emerald-500 hover:bg-emerald-600 text-white font-bold rounded-xl text-xs transition inline-flex items-center gap-1.5">
+                <i class="fa-solid fa-phone"></i> সিরিয়াল নিন: 01762-222128
               </a>
-              <a href="https://wa.me/8801762222128" target="_blank" class="px-5 py-3 bg-white/10 hover:bg-white/20 text-white font-bold rounded-xl text-xs transition inline-flex items-center gap-2 border border-white/20">
+              <a href="https://wa.me/8801762222128" target="_blank" class="px-5 py-2.5 bg-white/10 hover:bg-white/20 text-white font-bold rounded-xl text-xs transition inline-flex items-center gap-1.5 border border-white/20">
                 <i class="fa-brands fa-whatsapp text-emerald-400"></i> WhatsApp / IMO
               </a>
             </div>
@@ -519,8 +496,136 @@
     </div>
   </section>
 
+  <!-- DOCTOR VIDEO SECTION (DOWNLOADED FACEBOOK VIDEO EMBED) -->
+  <section id="video" class="py-16 bg-slate-900 text-white">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-10">
+        <span class="text-emerald-400 bg-emerald-950/80 border border-emerald-500/40 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">ভিডিও বার্তা</span>
+        <h2 class="text-3xl font-bold mt-2">
+          ডা. এম. এস. ইসলাম-এর সরাসরি ভিডিও পরামর্শ
+        </h2>
+        <div class="w-16 h-1 bg-emerald-500 mx-auto mt-3 rounded-full"></div>
+        <p class="text-slate-300 text-sm mt-3">
+          ভিআইপি হোমিও কমপ্লেক্স এবং চিকিৎসাসেবা সংক্রান্ত গুরুত্বপূর্ণ ভিডিও বার্তা।
+        </p>
+      </div>
+
+      <!-- Video Player Card -->
+      <div class="bg-slate-950 rounded-3xl p-4 sm:p-6 border border-emerald-500/30 shadow-2xl">
+        <div class="relative rounded-2xl overflow-hidden bg-black aspect-video flex items-center justify-center">
+          <video controls preload="metadata" class="w-full h-full object-contain">
+            <source src="assets/doctor-video.mp4" type="video/mp4">
+            আপনার ব্রাউজার ভিডিও প্লে করতে সমর্থন করছে না।
+          </video>
+        </div>
+
+        <div class="mt-4 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs sm:text-sm">
+          <div class="flex items-center gap-2 text-slate-300">
+            <i class="fa-solid fa-circle-play text-emerald-400 text-lg"></i>
+            <span>ভিডিও বক্তব্য: <strong>ডা. এম. এস. ইসলাম</strong> &bull; ভিআইপি হোমিও কমপ্লেক্স</span>
+          </div>
+
+          <a href="https://www.facebook.com/share/v/1A1HyheMD9/" target="_blank" class="px-4 py-2 bg-blue-600 hover:bg-blue-500 text-white font-bold rounded-xl text-xs transition inline-flex items-center gap-2">
+            <i class="fa-brands fa-facebook"></i> ফেসবুকে দেখুন
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PROFESSIONAL VISITING CARD SECTION (DIGITAL VISITING CARD AS REQUESTED) -->
+  <section id="visiting-card" class="py-16 bg-gradient-to-b from-slate-50 to-white">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center mb-10">
+        <span class="text-emerald-700 bg-emerald-100 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">অফিসিয়াল ডিজিটাল ভিজিটিং কার্ড</span>
+        <h2 class="text-3xl font-bold text-slate-900 mt-2">
+          ডা. এম. এস. ইসলাম — ভিজিটিং কার্ড
+        </h2>
+        <div class="w-16 h-1 bg-emerald-600 mx-auto mt-3 rounded-full"></div>
+        <p class="text-slate-600 text-sm mt-2">সংরক্ষণ করুন অথবা পরিচিতজনদের সাথে শেয়ার করুন</p>
+      </div>
+
+      <!-- Real Luxury Visiting Card Layout -->
+      <div class="visiting-card-mesh rounded-3xl p-6 sm:p-10 text-white relative overflow-hidden border border-amber-400/40">
+        
+        <!-- Subtle Watermark -->
+        <div class="absolute -right-10 -bottom-10 opacity-10 pointer-events-none">
+          <img src="assets/logo.svg" alt="" class="w-80 h-80 brightness-200">
+        </div>
+
+        <!-- Top Header of Card -->
+        <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center pb-6 border-b border-emerald-500/30 gap-4">
+          <div class="flex items-center gap-3">
+            <img src="assets/logo.svg" alt="VIP Homeo Complex" class="h-12 w-auto brightness-110">
+          </div>
+          <div class="text-left sm:text-right">
+            <span class="bg-amber-400 text-slate-950 text-[11px] font-extrabold px-3 py-1 rounded-full uppercase tracking-wider">
+              ৩০ বছরের অভিজ্ঞতা সম্পন্ন
+            </span>
+          </div>
+        </div>
+
+        <!-- Center: Doctor Identity & Exact Govt Registration -->
+        <div class="py-6 grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
+          <div class="md:col-span-8 space-y-2">
+            <h3 class="text-2xl sm:text-3xl font-extrabold text-white tracking-wide">
+              ডা. এম. এস. ইসলাম
+            </h3>
+            <p class="text-xs font-bold text-slate-300">Dr. M. S. Islam &bull; Homeopathic Physician</p>
+
+            <div class="pt-2 space-y-1 text-xs text-emerald-200">
+              <p class="font-semibold text-sm text-teal-300">
+                <i class="fa-solid fa-graduation-cap text-amber-400 mr-1.5"></i> ডি.এইচ. এম. এস. (বি.এইচ.বি), ঢাকা।
+              </p>
+              <p class="text-slate-300">
+                <i class="fa-solid fa-certificate text-amber-400 mr-1.5"></i> গভঃ রেজি: <strong class="text-amber-300 text-sm">২২২১৭</strong>
+              </p>
+              <p class="font-semibold text-teal-300">
+                <i class="fa-solid fa-building-columns text-amber-400 mr-1.5"></i> বি.ইউ.এ.বি কিউ.সি.বি , ঢাকা।
+              </p>
+              <p class="text-slate-300">
+                <i class="fa-solid fa-certificate text-amber-400 mr-1.5"></i> গভঃ রেজি: <strong class="text-amber-300 text-sm">২২৭১</strong>
+              </p>
+            </div>
+          </div>
+
+          <!-- Doctor photo avatar on card -->
+          <div class="md:col-span-4 flex justify-center md:justify-end">
+            <div class="w-28 h-28 sm:w-32 sm:h-32 rounded-2xl overflow-hidden border-2 border-amber-400/80 shadow-xl bg-slate-900">
+              <img src="assets/doctor-portrait.jpg" alt="ডা. এম. এস. ইসলাম" class="w-full h-full object-cover">
+            </div>
+          </div>
+        </div>
+
+        <!-- Bottom Footer of Card -->
+        <div class="pt-5 border-t border-emerald-500/30 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 text-xs">
+          <div class="space-y-1">
+            <p class="flex items-center gap-2">
+              <i class="fa-solid fa-phone text-amber-400"></i>
+              <span>সরাসরি কল: <strong class="text-amber-300 text-sm">01762-222128</strong></span>
+            </p>
+            <p class="flex items-center gap-2">
+              <i class="fa-brands fa-whatsapp text-emerald-400"></i>
+              <span>হোয়াটসঅ্যাপ / ইমো: <strong class="text-emerald-300">+880 1762-222128</strong></span>
+            </p>
+          </div>
+
+          <div class="text-left sm:text-right space-y-1 text-slate-300">
+            <p><i class="fa-solid fa-clock text-emerald-400 mr-1"></i> প্রতিদিন সকাল ১০:০০ - দুপুর ২:০০ ও বিকাল ৪:০০ - রাত ৯:০০</p>
+            <p class="text-amber-300 font-semibold"><i class="fa-solid fa-video mr-1"></i> অনলাইনে ইমো ও হোয়াটসঅ্যাপে সেবা নেওয়া যায়</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
   <!-- SPECIALIZED TREATMENTS & DISEASES (রোগ ও সেবাসমূহ) -->
-  <section id="services" class="py-16 lg:py-20 bg-slate-50">
+  <section id="services" class="py-16 bg-slate-50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
       <div class="text-center max-w-3xl mx-auto mb-14">
@@ -529,15 +634,12 @@
           যেসব জটিল ও পুরাতন রোগের সফল চিকিৎসা দেওয়া হয়
         </h2>
         <div class="w-16 h-1 bg-emerald-600 mx-auto mt-3 rounded-full"></div>
-        <p class="text-slate-600 text-sm sm:text-base mt-3">
-          ভিআইপি হোমিও কমপ্লেক্সে দীর্ঘদিনের কঠিন রোগের কারণ নির্ণয় করে স্থায়ী উপশম প্রদান করা হয়:
-        </p>
       </div>
 
       <!-- Treatments Grid -->
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
         
-        <!-- Card 1: চর্ম ও অ্যালার্জি রোগ -->
+        <!-- Card 1 -->
         <div class="bg-white rounded-2xl p-6 border border-slate-200 hover:border-emerald-500 hover:shadow-xl transition-all group">
           <div class="w-12 h-12 rounded-xl bg-emerald-100 text-emerald-700 flex items-center justify-center text-xl mb-4 group-hover:bg-emerald-600 group-hover:text-white transition">
             <i class="fa-solid fa-hand-dots"></i>
@@ -546,16 +648,12 @@
           <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-4">
             একজিমা, সোরিয়াসিস, রিংওয়ার্ম (দাদ), চুলকানি, এলার্জিক রাইনাইটিস, আর্টিকেরিয়া (আমবাত), শ্বেতী রোগ, ব্রন ও মেছতার সফল স্থায়ী হোমিও প্রতিকার।
           </p>
-          <ul class="text-xs text-slate-600 space-y-1 mb-4 border-t border-slate-100 pt-3">
-            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-600"></i> ক্ষতিকর স্টেরয়েডমুক্ত চিকিৎসা</li>
-            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-600"></i> রক্ত পরিশোধন করে সমূলে নিরাময়</li>
-          </ul>
           <button onclick="bookForDisease('চর্ম ও অ্যালার্জি রোগ')" class="text-emerald-700 font-bold text-xs inline-flex items-center gap-1 group-hover:gap-2 transition">
             চিকিৎসা পরামর্শ নিন <i class="fa-solid fa-arrow-right text-[10px]"></i>
           </button>
         </div>
 
-        <!-- Card 2: পাইলস, ফিস্টুলা ও অ্যানাল ফিশার -->
+        <!-- Card 2 -->
         <div class="bg-white rounded-2xl p-6 border border-slate-200 hover:border-emerald-500 hover:shadow-xl transition-all group">
           <div class="w-12 h-12 rounded-xl bg-rose-100 text-rose-700 flex items-center justify-center text-xl mb-4 group-hover:bg-rose-600 group-hover:text-white transition">
             <i class="fa-solid fa-circle-exclamation"></i>
@@ -564,16 +662,12 @@
           <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-4">
             বিনা অপারেশনে রক্তপড়া বন্ধ, পাইলসের বলি শুকানো, মলদ্বারে অসহ্য জ্বালাপোড়া ও ব্যথামুক্ত উপশম। বারবার ফিরে আসা ফিস্টুলার নিরাপদ নিরাময়।
           </p>
-          <ul class="text-xs text-slate-600 space-y-1 mb-4 border-t border-slate-100 pt-3">
-            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-600"></i> অপারেশন বিহীন নিরাপদ সমাধান</li>
-            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-600"></i> কোষ্ঠকাঠিন্য দূর করে স্বাভাবিক হজম</li>
-          </ul>
           <button onclick="bookForDisease('পাইলস ও ফিস্টুলা')" class="text-emerald-700 font-bold text-xs inline-flex items-center gap-1 group-hover:gap-2 transition">
             চিকিৎসা পরামর্শ নিন <i class="fa-solid fa-arrow-right text-[10px]"></i>
           </button>
         </div>
 
-        <!-- Card 3: গ্যাস্ট্রিক, আলসার ও আইবিএস -->
+        <!-- Card 3 -->
         <div class="bg-white rounded-2xl p-6 border border-slate-200 hover:border-emerald-500 hover:shadow-xl transition-all group">
           <div class="w-12 h-12 rounded-xl bg-amber-100 text-amber-700 flex items-center justify-center text-xl mb-4 group-hover:bg-amber-600 group-hover:text-white transition">
             <i class="fa-solid fa-shield-virus"></i>
@@ -582,16 +676,12 @@
           <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-4">
             দীর্ঘদিনের পেটের গ্যাস, বুক জ্বালা, টক ঢেকুর, পেট ফাঁপা, পেপটিক আলসার, ফ্যাটি লিভার ও আমাশয় বা অনিয়মিত মলত্যাগের কার্যকরী সমাধান।
           </p>
-          <ul class="text-xs text-slate-600 space-y-1 mb-4 border-t border-slate-100 pt-3">
-            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-600"></i> পরিপাকতন্ত্র পুনরুজ্জীবিত করা</li>
-            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-600"></i> গ্যাসের ওষুধ খাওয়ার নির্ভরতা দূর করা</li>
-          </ul>
           <button onclick="bookForDisease('গ্যাস্ট্রিক ও আইবিএস')" class="text-emerald-700 font-bold text-xs inline-flex items-center gap-1 group-hover:gap-2 transition">
             চিকিৎসা পরামর্শ নিন <i class="fa-solid fa-arrow-right text-[10px]"></i>
           </button>
         </div>
 
-        <!-- Card 4: বাত-ব্যথা ও সায়াটিকা -->
+        <!-- Card 4 -->
         <div class="bg-white rounded-2xl p-6 border border-slate-200 hover:border-emerald-500 hover:shadow-xl transition-all group">
           <div class="w-12 h-12 rounded-xl bg-blue-100 text-blue-700 flex items-center justify-center text-xl mb-4 group-hover:bg-blue-600 group-hover:text-white transition">
             <i class="fa-solid fa-bone"></i>
@@ -600,16 +690,12 @@
           <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-4">
             রিউমাটয়েড আর্থ্রাইটিস, গাউট (ইউরিক অ্যাসিড বৃদ্ধি), ঘাড় ও মেরুদণ্ডের স্পন্ডিলাইটিস, ফ্রোজেন শোল্ডার ও পুরনো তীব্র অস্থিসন্ধির ব্যথার উপশম।
           </p>
-          <ul class="text-xs text-slate-600 space-y-1 mb-4 border-t border-slate-100 pt-3">
-            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-600"></i> জয়েন্টের ফোলা ও প্রদাহ রোধ</li>
-            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-600"></i> ব্যথানাশক ওষুধের সাইড ইফেক্ট মুক্ত</li>
-          </ul>
           <button onclick="bookForDisease('বাত ও জয়েন্ট ব্যথা')" class="text-emerald-700 font-bold text-xs inline-flex items-center gap-1 group-hover:gap-2 transition">
             চিকিৎসা পরামর্শ নিন <i class="fa-solid fa-arrow-right text-[10px]"></i>
           </button>
         </div>
 
-        <!-- Card 5: পুরুষ স্বাস্থ্য ও যৌন সমস্যা -->
+        <!-- Card 5 -->
         <div class="bg-white rounded-2xl p-6 border border-slate-200 hover:border-emerald-500 hover:shadow-xl transition-all group">
           <div class="w-12 h-12 rounded-xl bg-purple-100 text-purple-700 flex items-center justify-center text-xl mb-4 group-hover:bg-purple-600 group-hover:text-white transition">
             <i class="fa-solid fa-venus-mars"></i>
@@ -618,16 +704,12 @@
           <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-4">
             ধাতু দুর্বলতা, দ্রুত বীর্যপাত, লিঙ্গের শিথিলতা, শুক্রাণু স্বল্পতা (Low Sperm Count), মানসিক উদ্বেগ ও শারীরিক ক্লান্তির নিরাপদ সমাধান।
           </p>
-          <ul class="text-xs text-slate-600 space-y-1 mb-4 border-t border-slate-100 pt-3">
-            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-600"></i> শতভাগ গোপনীয়তা রক্ষা</li>
-            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-600"></i> প্রাকৃতিক জার্মান ওষুধের শক্তি</li>
-          </ul>
           <button onclick="bookForDisease('পুরুষ স্বাস্থ্য ও গোপন সমস্যা')" class="text-emerald-700 font-bold text-xs inline-flex items-center gap-1 group-hover:gap-2 transition">
             গোপনে পরামর্শ নিন <i class="fa-solid fa-arrow-right text-[10px]"></i>
           </button>
         </div>
 
-        <!-- Card 6: নারী স্বাস্থ্য ও বন্ধ্যাত্ব -->
+        <!-- Card 6 -->
         <div class="bg-white rounded-2xl p-6 border border-slate-200 hover:border-emerald-500 hover:shadow-xl transition-all group">
           <div class="w-12 h-12 rounded-xl bg-pink-100 text-pink-700 flex items-center justify-center text-xl mb-4 group-hover:bg-pink-600 group-hover:text-white transition">
             <i class="fa-solid fa-person-dress"></i>
@@ -636,10 +718,6 @@
           <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-4">
             অনিয়মিত মাসিক, ওভারিয়ান সিস্ট (PCOS), জরায়ুর টিউমার, অতিরিক্ত রক্তক্ষরণ, শ্বেতপ্রদর (লিউকেরিয়া), বন্ধ্যাত্ব ও হরমোন ব্যালেন্সিং।
           </p>
-          <ul class="text-xs text-slate-600 space-y-1 mb-4 border-t border-slate-100 pt-3">
-            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-600"></i> হরমোনের স্বাভাবিক ভারসাম্য রক্ষা</li>
-            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-600"></i> সিস্ট ও টিউমারে সফল নিরাময়</li>
-          </ul>
           <button onclick="bookForDisease('নারী স্বাস্থ্য ও সমস্যা')" class="text-emerald-700 font-bold text-xs inline-flex items-center gap-1 group-hover:gap-2 transition">
             চিকিৎসা পরামর্শ নিন <i class="fa-solid fa-arrow-right text-[10px]"></i>
           </button>
@@ -650,7 +728,7 @@
     </div>
   </section>
 
-  <!-- TYPES OF HOMEOPATHY MEDICINES (ওষুধের ধরণ ও গুণমান) -->
+  <!-- TYPES OF HOMEOPATHY MEDICINES -->
   <section id="medicines" class="py-16 bg-slate-900 text-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
@@ -705,81 +783,6 @@
     </div>
   </section>
 
-  <!-- ONLINE & COURIER CONSULTATION SECTION -->
-  <section id="online-consult" class="py-16 bg-gradient-to-b from-emerald-50 to-white">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      
-      <div class="bg-white rounded-3xl shadow-xl border border-emerald-100 p-8 sm:p-12">
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-          
-          <div class="lg:col-span-7 space-y-5">
-            <span class="text-emerald-700 bg-emerald-100 text-xs font-bold px-3 py-1 rounded-full uppercase">অনলাইন কনসালটেন্সি ও ডেলিভারি</span>
-            <h2 class="text-3xl font-bold text-slate-900 leading-tight">
-              ইমো ও হোয়াটসঅ্যাপে ভিডিও কল পরামর্শ <br>
-              <span class="text-emerald-700">ও কুরিয়ার সার্ভিসে ওষুধ প্রাপ্তি</span>
-            </h2>
-            <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
-              চেম্বারে সরাসরি আসতে না পারলে আপনি মোবাইল ফোন, ইমো (IMO) বা হোয়াটসঅ্যাপে (WhatsApp) ভিডিও কলে সরাসরি ডা. এম. এস. ইসলামের সাথে কথা বলে পরামর্শ নিতে পারেন। আপনার রোগের বিবরণ শুনে নির্দিষ্ট ওষুধ সুন্দরবন কুরিয়ার বা এস.এ পরিবহনের মাধ্যমে সরাসরি আপনার ঠিকানায় পাঠিয়ে দেওয়া হবে।
-            </p>
-
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs sm:text-sm">
-              <div class="p-3 bg-emerald-50 rounded-xl border border-emerald-200">
-                <strong class="text-emerald-900 block font-bold mb-1">
-                  <i class="fa-solid fa-phone text-emerald-600 mr-1"></i> সরাসরি কল হেল্পলাইন:
-                </strong>
-                <a href="tel:01762222128" class="text-lg font-extrabold text-emerald-800">01762-222128</a>
-              </div>
-              <div class="p-3 bg-teal-50 rounded-xl border border-teal-200">
-                <strong class="text-teal-900 block font-bold mb-1">
-                  <i class="fa-brands fa-whatsapp text-emerald-600 mr-1"></i> WhatsApp / IMO হটলাইন:
-                </strong>
-                <a href="https://wa.me/8801762222128" target="_blank" class="text-lg font-extrabold text-teal-800">+880 1762-222128</a>
-              </div>
-            </div>
-
-            <div class="pt-2 flex flex-wrap gap-3">
-              <a href="https://wa.me/8801762222128?text=আসসালামু%20আলাইকুম,%20আমি%20অনলাইনে%20পরামর্শ/ওষুধ%20নিতে%20চাই।" target="_blank" class="px-6 py-3 bg-emerald-600 hover:bg-emerald-700 text-white font-bold rounded-xl text-xs transition inline-flex items-center gap-2">
-                <i class="fa-brands fa-whatsapp text-base"></i> হোয়াটসঅ্যাপে মেসেজ পাঠান
-              </a>
-              <a href="tel:01762222128" class="px-6 py-3 bg-slate-900 hover:bg-slate-800 text-white font-bold rounded-xl text-xs transition inline-flex items-center gap-2">
-                <i class="fa-solid fa-phone"></i> সরাসরি কথা বলুন
-              </a>
-            </div>
-          </div>
-
-          <!-- Right: Courier Badges -->
-          <div class="lg:col-span-5 bg-gradient-to-br from-slate-900 to-emerald-950 p-6 sm:p-8 rounded-2xl text-white space-y-4">
-            <h3 class="text-xl font-bold flex items-center gap-2">
-              <i class="fa-solid fa-truck-fast text-amber-400"></i> ডেলিভারি পার্টনার্স
-            </h3>
-            <p class="text-slate-300 text-xs leading-relaxed">
-              সারা বাংলাদেশের যেকোনো জেলা ও থানায় সিলপ্যাক ওষুধ দ্রুত পাঠানো হয়:
-            </p>
-            <div class="space-y-2 text-xs">
-              <div class="p-2.5 bg-white/10 rounded-lg flex items-center justify-between">
-                <span><i class="fa-solid fa-check text-emerald-400 mr-1.5"></i> সুন্দরবন কুরিয়ার সার্ভিস</span>
-                <span class="text-amber-300 font-bold">২৪-৪৮ ঘণ্টা</span>
-              </div>
-              <div class="p-2.5 bg-white/10 rounded-lg flex items-center justify-between">
-                <span><i class="fa-solid fa-check text-emerald-400 mr-1.5"></i> এস. এ. পরিবহন</span>
-                <span class="text-amber-300 font-bold">দ্রুত পার্সেল</span>
-              </div>
-              <div class="p-2.5 bg-white/10 rounded-lg flex items-center justify-between">
-                <span><i class="fa-solid fa-check text-emerald-400 mr-1.5"></i> করতোয়া ও অন্যান্য কুরিয়ার</span>
-                <span class="text-amber-300 font-bold">নিরাপদ ডেলিভারি</span>
-              </div>
-            </div>
-            <div class="pt-2 text-center text-[11px] text-slate-300">
-              বিকাশ / নগদ / রকেটের মাধ্যমে ফি পরিশোধ সুবিধা।
-            </div>
-          </div>
-
-        </div>
-      </div>
-
-    </div>
-  </section>
-
   <!-- CONTACT & APPOINTMENT FORM -->
   <section id="contact" class="py-16 bg-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -804,7 +807,7 @@
             <div>
               <strong class="block text-slate-300">চিকিৎসক:</strong>
               <span class="text-lg font-bold text-white">ডা. এম. এস. ইসলাম</span>
-              <p class="text-teal-200 text-xs">D.H.M.S (B.H.B.), Dhaka</p>
+              <p class="text-teal-200 text-xs">ডি.এইচ.এম.এস (বি.এইচ.বি), ঢাকা &bull; গভঃ রেজি: ২২২১৭, ২২৭১</p>
             </div>
 
             <div>
@@ -879,7 +882,7 @@
                 <select id="consultType" class="w-full px-4 py-2.5 rounded-xl border border-slate-300 text-xs sm:text-sm focus:ring-2 focus:ring-emerald-500 focus:outline-none bg-white">
                   <option value="চেম্বারে সরাসরি সিরিয়াল">চেম্বারে সরাসরি সিরিয়াল</option>
                   <option value="ইমো / হোয়াটসঅ্যাপ ভিডিও পরামর্শ">ইমো / হোয়াটসঅ্যাপ ভিডিও পরামর্শ</option>
-                  <option value="কুরিয়ারে ওষুধ নেওয়া">কুরিয়ারে ওষুধ নেওয়া</option>
+                  <option value="প্রেসক্রিপশন ও ওষুধ পরামর্শ">প্রেসক্রিপশন ও ওষুধ পরামর্শ</option>
                 </select>
               </div>
             </div>
@@ -926,8 +929,8 @@
         <div class="space-y-2">
           <h4 class="text-white font-bold text-sm border-b border-slate-800 pb-2">ডাক্তার তথ্য</h4>
           <p class="text-white font-semibold">ডা. এম. এস. ইসলাম</p>
-          <p class="text-teal-300 text-xs">D.H.M.S (B.H.B.), Dhaka</p>
-          <p class="text-slate-400 text-xs">বাংলাদেশ হোমিওপ্যাথি বোর্ড, ঢাকা</p>
+          <p class="text-teal-300 text-xs">ডি.এইচ.এম.এস (বি.এইচ.বি), ঢাকা</p>
+          <p class="text-slate-400 text-xs">গভঃ রেজি: ২২২১৭, ২২৭১</p>
           <p class="text-amber-400 font-bold text-sm pt-1">হটলাইন: 01762-222128</p>
         </div>
 
@@ -943,8 +946,8 @@
         </div>
 
         <div class="space-y-2">
-          <h4 class="text-white font-bold text-sm border-b border-slate-800 pb-2">অনলাইন ও কুরিয়ার</h4>
-          <p class="text-xs text-slate-300">ইমো ও হোয়াটসঅ্যাপে ভিডিও কনসালটেন্সি সক্রিয়।</p>
+          <h4 class="text-white font-bold text-sm border-b border-slate-800 pb-2">অনলাইন ও ভিডিও কনসালটেন্সি</h4>
+          <p class="text-xs text-slate-300">ইমো ও হোয়াটসঅ্যাপে সরাসরি ভিডিও পরামর্শ সক্রিয়।</p>
           <a href="https://wa.me/8801762222128" target="_blank" class="inline-flex items-center gap-1.5 bg-emerald-700 hover:bg-emerald-600 text-white text-xs px-3 py-1.5 rounded-lg font-bold transition">
             <i class="fa-brands fa-whatsapp"></i> +880 1762-222128
           </a>
@@ -955,7 +958,7 @@
 
       <div class="pt-6 border-t border-slate-800 text-center text-xs text-slate-400">
         <p>© ২০২৬ ভিআইপি হোমিও কমপ্লেক্স (VIP Homeo Complex) । সর্বস্বত্ব সংরক্ষিত।</p>
-        <p class="mt-1 text-[11px] text-slate-400">চিকিৎসক: ডা. এম. এস. ইসলাম [D.H.M.S (B.H.B.), Dhaka] । হটলাইন: 01762-222128</p>
+        <p class="mt-1 text-[11px] text-slate-400">চিকিৎসক: ডা. এম. এস. ইসলাম [গভঃ রেজি: ২২২১৭, ২২৭১] । হটলাইন: 01762-222128</p>
       </div>
     </div>
   </footer>
@@ -1001,7 +1004,7 @@
           <i class="fa-solid fa-calendar-plus"></i>
         </div>
         <h3 class="text-xl font-bold text-slate-900">ডাক্তারের সিরিয়াল বুকিং</h3>
-        <p class="text-xs text-slate-600 mt-0.5">ডা. এম. এস. ইসলাম [D.H.M.S, Dhaka] &bull; হটলাইন: 01762-222128</p>
+        <p class="text-xs text-slate-600 mt-0.5">ডা. এম. এস. ইসলাম &bull; গভঃ রেজি: ২২২১৭, ২২৭১ &bull; হটলাইন: 01762-222128</p>
       </div>
 
       <form onsubmit="handleModalSubmit(event)" class="space-y-3.5 text-left text-xs sm:text-sm">
@@ -1047,7 +1050,6 @@
 
   <!-- JAVASCRIPT LOGIC -->
   <script>
-    // Mobile menu toggle
     const mobileMenuBtn = document.getElementById('mobileMenuBtn');
     const mobileMenu = document.getElementById('mobileMenu');
     mobileMenuBtn.addEventListener('click', () => {
@@ -1060,7 +1062,6 @@
       });
     });
 
-    // Modal controls
     function openAppointmentModal() {
       document.getElementById('appointmentModal').classList.remove('hidden');
       const today = new Date().toISOString().split('T')[0];
@@ -1104,7 +1105,7 @@
       const date = document.getElementById('modalAppointmentDate').value || 'যত দ্রুত সম্ভব';
 
       const text = `*ভিআইপি হোমিও কমপ্লেক্স - সিরিয়াল বুকিং*%0A` +
-                   `চিকিৎসক: ডা. এম. এস. ইসলাম%0A` +
+                   `চিকিৎসক: ডা. এম. এস. ইসলাম [গভঃ রেজি: ২২২১৭]%0A` +
                    `----------------------------------%0A` +
                    `রোগীর নাম: ${encodeURIComponent(name)}%0A` +
                    `মোবাইল: ${encodeURIComponent(phone)}%0A` +
@@ -1136,7 +1137,7 @@
       const problem = document.getElementById('patientProblem').value || 'চিকিৎসা পরামর্শ চাই';
 
       const text = `*ভিআইপি হোমিও কমপ্লেক্স - চিকিৎসা আবেদন*%0A` +
-                   `চিকিৎসক: ডা. এম. এস. ইসলাম [D.H.M.S, Dhaka]%0A` +
+                   `চিকিৎসক: ডা. এম. এস. ইসলাম [গভঃ রেজি: ২২২১৭, ২২৭১]%0A` +
                    `------------------------------------%0A` +
                    `নাম: ${encodeURIComponent(name)}%0A` +
                    `মোবাইল: ${encodeURIComponent(phone)}%0A` +
