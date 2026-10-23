@@ -105,64 +105,73 @@
     </div>
   </div>
 
-  <!-- MAIN NAVIGATION -->
-  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md shadow-sm border-b border-slate-100">
+  <!-- MAIN NAVIGATION (PREMIUM GLASS / TRANSPARENT NAVBAR) -->
+  <header class="sticky top-0 z-50 bg-white/75 backdrop-blur-xl border-b border-white/40 shadow-sm supports-[backdrop-filter]:bg-white/65 transition-all duration-300">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex items-center justify-between h-20">
+      <div class="flex items-center justify-between h-20 gap-4">
         
         <!-- Brand / Custom Designed Vector Logo -->
-        <a href="#" class="flex items-center group py-2">
-          <img src="assets/logo.svg" alt="VIP Homeo Complex Logo" class="h-14 sm:h-16 w-auto object-contain transition group-hover:scale-105">
+        <a href="#" class="flex items-center group py-2 shrink-0">
+          <img src="assets/logo.svg" alt="VIP Homeo Complex Logo" class="h-12 sm:h-14 w-auto object-contain transition group-hover:scale-105 drop-shadow-sm">
         </a>
 
-        <!-- Desktop Menu -->
-        <nav class="hidden lg:flex items-center gap-7 font-medium text-slate-700 text-base">
-          <a href="#home" class="hover:text-brand-600 transition">হোম</a>
-          <a href="#doctor" class="hover:text-brand-600 transition">ডাক্তার পরিচিতি</a>
-          <a href="#chamber" class="hover:text-brand-600 transition">চেম্বার দর্শন</a>
-          <a href="#video" class="hover:text-brand-600 transition">ভিডিও বার্তা</a>
-          <a href="#services" class="hover:text-brand-600 transition">চিকিৎসার ক্ষেত্রসমূহ</a>
-          <a href="#medicines" class="hover:text-brand-600 transition">ওষুধের ধরণ</a>
-          <a href="#visiting-card" class="hover:text-brand-600 transition">ভিজিটিং কার্ড</a>
-          <a href="#contact" class="hover:text-brand-600 transition">যোগাযোগ</a>
+        <!-- Desktop Menu with Frosted Glass Hover Pills -->
+        <nav class="hidden lg:flex items-center gap-1 font-semibold text-slate-700 text-[13px] xl:text-sm">
+          <a href="#home" class="px-2.5 py-1.5 rounded-lg hover:text-emerald-700 hover:bg-emerald-50/90 transition">হোম</a>
+          <a href="#doctor" class="px-2.5 py-1.5 rounded-lg hover:text-emerald-700 hover:bg-emerald-50/90 transition">ডাক্তার পরিচিতি</a>
+          <a href="#chamber" class="px-2.5 py-1.5 rounded-lg hover:text-emerald-700 hover:bg-emerald-50/90 transition">চেম্বার দর্শন</a>
+          <a href="#video" class="px-2.5 py-1.5 rounded-lg hover:text-emerald-700 hover:bg-emerald-50/90 transition">ভিডিও বার্তা</a>
+          <a href="#services" class="px-2.5 py-1.5 rounded-lg hover:text-emerald-700 hover:bg-emerald-50/90 transition">চিকিৎসার ক্ষেত্রসমূহ</a>
+          <a href="#medicines" class="px-2.5 py-1.5 rounded-lg hover:text-emerald-700 hover:bg-emerald-50/90 transition">ওষুধের ধরণ</a>
+          <a href="#visiting-card" class="px-2.5 py-1.5 rounded-lg hover:text-emerald-700 hover:bg-emerald-50/90 transition">ভিজিটিং কার্ড</a>
+          <a href="#contact" class="px-2.5 py-1.5 rounded-lg hover:text-emerald-700 hover:bg-emerald-50/90 transition">যোগাযোগ</a>
         </nav>
 
-        <!-- Right Action Buttons -->
-        <div class="hidden sm:flex items-center gap-3">
-          <a href="tel:01762222128" class="px-4 py-2 text-xs font-bold text-emerald-800 bg-emerald-50 border border-emerald-300 rounded-xl hover:bg-emerald-100 transition inline-flex items-center gap-1.5">
-            <i class="fa-solid fa-phone"></i> 01762-222128
+        <!-- Right Action Buttons (Single Line & Online Live Badge) -->
+        <div class="hidden sm:flex items-center gap-2.5 shrink-0">
+          <a href="tel:01762222128" class="whitespace-nowrap px-3.5 py-2 text-xs font-bold text-emerald-950 bg-emerald-50/90 hover:bg-emerald-100 border border-emerald-300/80 rounded-xl transition shadow-sm inline-flex items-center gap-2 shrink-0 group">
+            <span class="relative flex h-2 w-2">
+              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+              <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-600"></span>
+            </span>
+            <i class="fa-solid fa-phone text-emerald-600 text-xs group-hover:rotate-12 transition"></i>
+            <span class="tracking-wide font-extrabold text-slate-900 text-xs sm:text-sm">01762-222128</span>
+            <span class="bg-emerald-200/80 text-emerald-800 text-[10px] font-extrabold px-1.5 py-0.5 rounded uppercase">Online</span>
           </a>
-          <button onclick="openAppointmentModal()" class="inline-flex items-center justify-center px-4 py-2 text-xs font-bold text-white transition-all bg-gradient-to-r from-emerald-600 to-teal-600 rounded-xl shadow hover:from-emerald-500 hover:to-teal-500 active:scale-95">
-            <i class="fa-regular fa-calendar-check mr-1.5"></i> সিরিয়াল নিন
+
+          <button onclick="openAppointmentModal()" class="whitespace-nowrap inline-flex items-center justify-center px-4 py-2 text-xs font-bold text-white transition-all bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 rounded-xl shadow-md hover:shadow-emerald-500/20 active:scale-95 shrink-0">
+            <i class="fa-regular fa-calendar-check mr-1.5 text-xs sm:text-sm"></i> <span>সিরিয়াল নিন</span>
           </button>
         </div>
 
         <!-- Mobile Menu Toggle Button -->
         <div class="lg:hidden flex items-center">
-          <button id="mobileMenuBtn" aria-label="Menu" class="text-slate-700 hover:text-brand-600 p-2 focus:outline-none">
+          <button id="mobileMenuBtn" aria-label="Menu" class="text-slate-700 hover:text-emerald-700 p-2 focus:outline-none">
             <i class="fa-solid fa-bars text-2xl"></i>
           </button>
         </div>
       </div>
     </div>
 
-    <!-- Mobile Dropdown Menu -->
-    <div id="mobileMenu" class="hidden lg:hidden bg-white border-b border-slate-200 px-4 pt-2 pb-6 space-y-3">
-      <a href="#home" class="block py-2 text-slate-700 hover:text-brand-600 font-medium">হোম</a>
-      <a href="#doctor" class="block py-2 text-slate-700 hover:text-brand-600 font-medium">ডাক্তার পরিচিতি</a>
-      <a href="#chamber" class="block py-2 text-slate-700 hover:text-brand-600 font-medium">চেম্বার দর্শন</a>
-      <a href="#video" class="block py-2 text-slate-700 hover:text-brand-600 font-medium">ভিডিও বার্তা</a>
-      <a href="#services" class="block py-2 text-slate-700 hover:text-brand-600 font-medium">চিকিৎসার ক্ষেত্রসমূহ</a>
-      <a href="#medicines" class="block py-2 text-slate-700 hover:text-brand-600 font-medium">ওষুধের ধরণ</a>
-      <a href="#visiting-card" class="block py-2 text-slate-700 hover:text-brand-600 font-medium">ডিজিটাল ভিজিটিং কার্ড</a>
-      <a href="#contact" class="block py-2 text-slate-700 hover:text-brand-600 font-medium">যোগাযোগ ও সিরিয়াল</a>
-      <div class="pt-2 flex flex-col gap-2">
-        <button onclick="openAppointmentModal()" class="w-full py-2.5 text-center text-sm font-bold text-white bg-emerald-600 hover:bg-emerald-700 rounded-lg">
+    <!-- Mobile Dropdown Menu (Glass Style) -->
+    <div id="mobileMenu" class="hidden lg:hidden bg-white/95 backdrop-blur-xl border-b border-slate-200/80 px-4 pt-2 pb-6 space-y-2 shadow-lg">
+      <a href="#home" class="block py-2 px-3 rounded-lg text-slate-700 hover:text-emerald-700 hover:bg-emerald-50 font-medium text-sm">হোম</a>
+      <a href="#doctor" class="block py-2 px-3 rounded-lg text-slate-700 hover:text-emerald-700 hover:bg-emerald-50 font-medium text-sm">ডাক্তার পরিচিতি</a>
+      <a href="#chamber" class="block py-2 px-3 rounded-lg text-slate-700 hover:text-emerald-700 hover:bg-emerald-50 font-medium text-sm">চেম্বার দর্শন</a>
+      <a href="#video" class="block py-2 px-3 rounded-lg text-slate-700 hover:text-emerald-700 hover:bg-emerald-50 font-medium text-sm">ভিডিও বার্তা</a>
+      <a href="#services" class="block py-2 px-3 rounded-lg text-slate-700 hover:text-emerald-700 hover:bg-emerald-50 font-medium text-sm">চিকিৎসার ক্ষেত্রসমূহ</a>
+      <a href="#medicines" class="block py-2 px-3 rounded-lg text-slate-700 hover:text-emerald-700 hover:bg-emerald-50 font-medium text-sm">ওষুধের ধরণ</a>
+      <a href="#visiting-card" class="block py-2 px-3 rounded-lg text-slate-700 hover:text-emerald-700 hover:bg-emerald-50 font-medium text-sm">ডিজিটাল ভিজিটিং কার্ড</a>
+      <a href="#contact" class="block py-2 px-3 rounded-lg text-slate-700 hover:text-emerald-700 hover:bg-emerald-50 font-medium text-sm">যোগাযোগ ও সিরিয়াল</a>
+      
+      <div class="pt-3 flex flex-col gap-2 border-t border-slate-100">
+        <a href="tel:01762222128" class="w-full py-2.5 text-center text-xs font-bold text-emerald-900 bg-emerald-50 border border-emerald-300/80 rounded-xl flex items-center justify-center gap-2">
+          <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+          <i class="fa-solid fa-phone text-xs"></i> 01762-222128 (সরাসরি কল)
+        </a>
+        <button onclick="openAppointmentModal()" class="w-full py-2.5 text-center text-xs font-bold text-white bg-gradient-to-r from-emerald-600 to-teal-600 rounded-xl shadow">
           <i class="fa-regular fa-calendar-check mr-1"></i> অনলাইন সিরিয়াল নিন
         </button>
-        <a href="tel:01762222128" class="w-full py-2.5 text-center text-sm font-bold text-emerald-800 bg-emerald-50 border border-emerald-300 rounded-lg">
-          <i class="fa-solid fa-phone mr-1"></i> সরাসরি কল: 01762-222128
-        </a>
       </div>
     </div>
   </header>
