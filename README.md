@@ -1,6 +1,14 @@
 # ভিআইপি হোমিও কমপ্লেক্স (VIP Homeo Complex)
 ### আধুনিক ও ক্লাসিক্যাল হোমিওপ্যাথি চিকিৎসাসেবা ওয়েবসাইট
 
+🌐 **লাইভ ওয়েবসাইট লিংক (Live Website):**  
+👉 **[https://snigdhaurmiurma.github.io/vip-homeo-complex/](https://snigdhaurmiurma.github.io/vip-homeo-complex/)**
+
+📦 **গিটহাব রিপোজিটরি (GitHub Repository):**  
+👉 **[https://github.com/snigdhaurmiurma/vip-homeo-complex](https://github.com/snigdhaurmiurma/vip-homeo-complex)**
+
+---
+
 **চিকিৎসক:** ডা. এম. এস. ইসলাম (Dr. M. S. Islam)  
 **ডিগ্রি ও পদবী:** ডি.এইচ.এম.এস (বি.এইচ.বি.), ঢাকা [D.H.M.S (B.H.B.), Dhaka]  
 **হটলাইন / মোবাইল:** ০১৭৬২-২২২১২৮ (01762-222128)  
